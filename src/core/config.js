@@ -7,6 +7,15 @@ const config = {
 		'Power Level',
 		'By Rarity Descending',
 	],
+	headers: [
+		'name',
+		'powerLevel',
+		'powerPoints',
+		'coins',
+		'type',
+		'rank',
+		'trophies',
+	],
 };
 
 export default config;

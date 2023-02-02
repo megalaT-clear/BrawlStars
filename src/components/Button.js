@@ -12,9 +12,9 @@ const Button = (context) => {
 				...state,
 				buttonIndex: peek(buttonIndex) + 1,
 				sortModes: items[buttonIndex % items.length],
-
 			}) }
-		>{sortModes}</button>);
+		>{sortModes}
+		</button>);
 };
 
 export default Button;
