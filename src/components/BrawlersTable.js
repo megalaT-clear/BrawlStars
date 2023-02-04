@@ -4,7 +4,7 @@ import TableHeader from './TableHeader';
 
 const BrawlersTable = (context) =>
 	<div>
-		<table className="headerStyle">
+		<table className="tableStyles">
 			<thead>
 				<TableHeader { ...context }/>
 			</thead>

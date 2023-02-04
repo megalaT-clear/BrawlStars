@@ -6,9 +6,18 @@ const TableCell = (context) => {
 	return headers.map((header, key) =>
 		<td
 			key={ key }
-			className="headerStyle"
+			className="tableStyle"
 		>
-			{characterDetail[header]}
+			{characterDetail[header] === characterDetail.image
+				? <td>
+					<img
+						src={ characterDetail.image }
+						alt="noImage"
+						width="100px"
+						height="100px"
+					/>
+				</td>
+				: characterDetail[header]}
 		</td>);
 };
 

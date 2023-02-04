@@ -7,17 +7,17 @@ const characters = [
 		type: 'Rare',
 		rank: 3,
 		trophies: 22,
-
+		image: '/img/shelly.jpeg',
 	},
 	{
-		name: 'Jessie',
+		name: 'tara',
 		powerLevel: 1,
 		powerPoints: 20,
 		coins: 20,
-		type: 'SuperRare',
+		type: 'Mythic',
 		rank: 2,
 		trophies: 10,
-
+		image: '/img/tara.jpeg',
 	},
 	{
 		name: 'Darryl',
@@ -27,6 +27,7 @@ const characters = [
 		type: 'SuperRare',
 		rank: 5,
 		trophies: 44,
+		image: '/img/darryl.jpeg',
 	},
 	{
 		name: 'Nita',
@@ -36,6 +37,7 @@ const characters = [
 		type: 'Rare',
 		rank: 6,
 		trophies: 61,
+		image: '/img/nita.jpeg',
 	},
 	{
 		name: 'ElPrimo',
@@ -43,8 +45,9 @@ const characters = [
 		powerPoints: 340,
 		coins: 800,
 		type: 'Rare',
-		rank: 17,
+		rank: 7,
 		trophies: 61,
+		image: '/img/ElPrimo.jpeg',
 	},
 ];
 

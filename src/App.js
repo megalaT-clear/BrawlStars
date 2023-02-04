@@ -6,7 +6,7 @@ import characters from './services/characters';
 
 const getInitialState = () => ({
 	buttonIndex: 1,
-	sortModes: 'By Rarity',
+	sortModes: 'by Rarity',
 	characterDetails: characters,
 });
 
