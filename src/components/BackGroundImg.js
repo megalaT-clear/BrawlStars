@@ -3,11 +3,11 @@ import React from 'react';
 const BackGroundImg = ({ data: { character }}) =>
 	<div>
 		<img
+			className="img"
 			src={ character.image }
 			alt="noImage"
-			width="236px"
-			height="170px"
-			border="2px solid black"
+			width="186px"
+			height="140px"
 		/>
 	</div>;
 

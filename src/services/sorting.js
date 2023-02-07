@@ -1,5 +1,13 @@
 /* eslint-disable no-magic-numbers */
 
+import { rndBetween } from '@laufire/utils/lib';
+
+const getCharacters = (characters) =>
+	characters.map((character) => ({ ...character,
+		powerLevel: rndBetween(1, 10),
+		powerPoints: rndBetween(1, 500),
+		coins: rndBetween(1, 500) }));
+
 const squareMultiplier = 85;
 const squareAdd = 400;
 
@@ -52,6 +60,7 @@ const sorting = {
 	powerLevel,
 	closestToNextRank,
 	getBoxes,
+	getCharacters,
 };
 
 export default sorting;

@@ -7,7 +7,7 @@ const Trophies = ({ data: { character }}) =>
 				src="./img/trophies.jpeg"
 				alt="noImage"
 				width="24px"
-				height="23px"
+				height="20px"
 			/>
 			<label className="trophiesCount">{character.trophies}</label>
 		</span>

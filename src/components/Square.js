@@ -1,3 +1,5 @@
+/* eslint-disable max-lines-per-function */
+/* eslint-disable max-len */
 /* eslint-disable no-magic-numbers */
 import React from 'react';
 import BackGroundImg from './BackGroundImg';
@@ -9,23 +11,25 @@ const squareMultiplier = 150;
 const squareAdd = 100;
 
 const Square = (context) => {
+	const { config: { size }} = context;
 	const { data: { Key }} = context;
-	const size = 2;
 
 	return (
-		<div
-			className="square"
-			style={ {
-				top: 50 * size,
-				left: ((Key * squareMultiplier) + squareAdd) * size,
-				height: 120 * size,
-				width: 120 * size,
-			} }
-		>
-			<BackGroundImg { ...context }/>
-			<Header { ...context }/>
-			<Body { ...context }/>
-			<Rectangle { ...context }/>
+		<div>
+			<div
+				className="square"
+				style={ {
+					top: (Math.floor(Key / 3) * 300) + 130,
+					left: ((((Key % 3) * squareMultiplier) + squareAdd) * size) + 200,
+					height: 105 * size,
+					width: 120 * size,
+				} }
+			>
+				<BackGroundImg { ...context }/>
+				<Header { ...context }/>
+				<Body { ...context }/>
+				<Rectangle { ...context }/>
+			</div>
 		</div>
 
 	);

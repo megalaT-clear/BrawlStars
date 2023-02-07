@@ -13,8 +13,7 @@
 
 .square{
 	position: absolute;
-	background-color: rgb(85, 180, 136);
-	border: 1px solid;
+	border: 3px solid;
 }
 
 .footerStyle{
@@ -41,12 +40,18 @@
 	font-weight: bold;
 }
 
+.img{
+		position: absolute;
+		top: 3px;
+		left: 20px;
+}
+
 .trophiesBar{
 position: absolute;
-height: 25px;
-top: 5px;
-width:55%;
-border: 2px solid;
+height: 22px;
+top: 6px;
+width:63%;
+border: 3px solid;
 left: 41px
 }
 
