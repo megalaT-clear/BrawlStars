@@ -1,25 +1,155 @@
-.App {
-	text-align: center;
+.App{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(161, 161, 199);
+}
 
-	button {
-		font-weight: bold;
-	}
+.buttonStyle{
+	position: absolute;
+	height:30px;
+	left: 47%
+}
+
+.square{
+	position: absolute;
+	background-color: rgb(85, 180, 136);
+	border: 1px solid;
+}
+
+.footerStyle{
+	position: absolute;
+	height: 40px;
+	bottom: 0px;
+	width:100%;
+	background-color: rgb(62, 216, 62);
+}
+
+.header{
+	position: absolute;
+	height: 40px;
+	top: -34px;
+	width:100%;
+	left: -9px
+}
+
+.level{
+	position: absolute;
+	top: 8px;
+	left: 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.trophiesBar{
+position: absolute;
+height: 25px;
+top: 5px;
+width:55%;
+border: 2px solid;
+left: 41px
+}
+
+.trophiesImg{
+position: absolute;
+left: 40px
+}
+
+.trophiesCount{
+	position: absolute;
+	top:4.5px;
+	left: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	color: gold;
 }
 
 
-.tableStyle {
-	border: 2px solid black;
-	background-color: papayawhip;
-	text-align: center;
-	width: 100px;
-};
-
-.tableStyles {
+.namePower{
 	position: absolute;
-	border-Collapse: collapse;
-	border: 2px solid black;
-	background-color: papayawhip;
-	text-align: center;
-	margin-top: 10Px;
-	left: 21%;
-};
+	left: 2px;
+	bottom: 0px;
+	width:8px;
+	font-size: 20px;
+	font-weight: bold;
+	color: rgb(40, 41, 43);
+}
+
+.powerPointStyle{
+	position: absolute;
+	top: 5px;
+	left: 31px;
+	border-radius: 50%;
+
+}
+
+.coinStyle{
+	position: absolute;
+	top: 5px;
+	right: 67px;
+	border-radius: 50%;
+}
+
+.plusSymbol{
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	font-size: 25px;
+	color:rgb(33, 34, 48)
+}
+
+.powerPointsNumber{
+	position: absolute;
+	left: 40px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.coinsNumber{
+	position: absolute;
+	right: -46px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.powerBox{
+	position: absolute;
+	bottom: 2px;
+	left: 40px;
+	height: 30px;
+	width: 32px;
+	background-color: black;
+}
+
+.PowerText{
+	position: absolute;
+	bottom: 5px;
+	left: -24px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.bodyStyle{
+	position: absolute;
+	bottom: 41px;
+	width:100%;
+	height:35px;
+}
+
+.power{
+	position: absolute;
+	left: 70%;
+	bottom: -3px;
+	width:27%;
+	height:35px;
+}
+
+
+.rank{
+	position: absolute;
+	left: 10px;
+	top: 2px;
+	color: aliceblue;
+	font-size: 20px;
+	font-weight: bold;
+}

@@ -1,6 +1,6 @@
 const characters = [
 	{
-		name: 'shelly',
+		name: 'SHELLY',
 		powerLevel: 2,
 		powerPoints: 30,
 		coins: 35,
@@ -10,7 +10,7 @@ const characters = [
 		image: '/img/shelly.jpeg',
 	},
 	{
-		name: 'tara',
+		name: 'TARA',
 		powerLevel: 1,
 		powerPoints: 20,
 		coins: 20,
@@ -20,7 +20,7 @@ const characters = [
 		image: '/img/tara.jpeg',
 	},
 	{
-		name: 'Darryl',
+		name: 'DARRYL',
 		powerLevel: 7,
 		powerPoints: 340,
 		coins: 800,
@@ -30,7 +30,7 @@ const characters = [
 		image: '/img/darryl.jpeg',
 	},
 	{
-		name: 'Nita',
+		name: 'NITA',
 		powerLevel: 3,
 		powerPoints: 50,
 		coins: 75,
@@ -40,7 +40,7 @@ const characters = [
 		image: '/img/nita.jpeg',
 	},
 	{
-		name: 'ElPrimo',
+		name: 'ELPRIMO',
 		powerLevel: 7,
 		powerPoints: 340,
 		coins: 800,

@@ -25,6 +25,7 @@ const Button = (context) => {
 
 	return (
 		<button
+			className="buttonStyle"
 			onClick={ () => setState({
 				...state,
 				buttonIndex: peek(buttonIndex) + 1,

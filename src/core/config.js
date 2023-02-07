@@ -1,5 +1,6 @@
 /* eslint-disable no-magic-numbers */
 const config = {
+	size: 1,
 	items: [
 		'by Rarity',
 		'by Rarity Descending',

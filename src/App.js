@@ -1,7 +1,8 @@
 import { React, useState } from 'react';
 import './App.scss';
-import BrawlersTable from './components/BrawlersTable';
 import Button from './components/Button';
+import BrawlerStar from './components/BrawlerStar';
+
 import characters from './services/characters';
 
 const getInitialState = () => ({
@@ -16,7 +17,7 @@ const App = (context) => {
 
 	return <div className="App">
 		<Button { ...extendedContext }/>
-		<BrawlersTable { ...extendedContext }/>
+		<BrawlerStar { ...extendedContext }/>
 	</div>;
 };
 
