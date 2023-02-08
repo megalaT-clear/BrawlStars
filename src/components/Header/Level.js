@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Level = ({ data: { character }}) =>
+const Rank = ({ data: { character }}) =>
 	<div>
 		<img
 			style={ { borderRadius: '50%' } }
@@ -9,7 +9,7 @@ const Level = ({ data: { character }}) =>
 			width="43px"
 			height="40px"
 		/>
-		<label className="level">{character.powerLevel}</label>
+		<label className="level">{character.rank}</label>
 	</div>;
 
-export default Level;
+export default Rank;

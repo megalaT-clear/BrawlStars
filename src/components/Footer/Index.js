@@ -1,13 +1,12 @@
-/* eslint-disable max-lines-per-function */
 import React from 'react';
-import Coin from './Coin';
+import BrawlCoin from './BrawlCoin';
 import PowerPoint from './PowerPoint';
 
-const Rectangle = (context) =>
+const Footer = (context) =>
 	<div className="footerStyle">
-		<Coin { ...context }/>
+		<BrawlCoin { ...context }/>
 		<PowerPoint { ...context }/>
 		<label className="plusSymbol">+</label>
 	</div>;
 
-export default Rectangle;
+export default Footer;

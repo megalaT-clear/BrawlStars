@@ -1,11 +1,11 @@
 import React from 'react';
-import Level from './Level';
+import Rank from './Level';
 import Trophies from './Trophies';
 
 const Header = (context) =>
 	<div className="header">
-		<Level { ...context }/>
 		<Trophies { ...context }/>
+		<Rank { ...context }/>
 	</div>;
 
 export default Header;

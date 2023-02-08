@@ -1,13 +1,13 @@
 import React from 'react';
-import Square from './Square';
+import Characters from './Characters';
 
-const BrawlerStar = (context) => {
+const Container = (context) => {
 	const { state: { characterDetails }} = context;
 
 	return characterDetails.map((character, Key) =>
 		<div key={ Key }>
-			<Square { ...{ ...context, data: { character, Key }} }/>
+			<Characters { ...{ ...context, data: { character, Key }} }/>
 		</div>);
 };
 
-export default BrawlerStar;
+export default Container;

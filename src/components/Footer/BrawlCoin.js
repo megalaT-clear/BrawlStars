@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Coin = ({ data: { character }}) =>
+const BrawlCoin = ({ data: { character }}) =>
 	<div className="coinStyle">
 		<img
 			style={ {
@@ -14,4 +14,4 @@ const Coin = ({ data: { character }}) =>
 		<label className="coinsNumber">{character.coins}</label>
 	</div>;
 
-export default Coin;
+export default BrawlCoin;

@@ -1,10 +1,10 @@
 import React from 'react';
 import Power from './Power';
-import Name from './Name';
+import CharacterName from './CharacterName';
 
 const Body = (context) =>
 	<div className="bodyStyle">
-		<Name { ...context }/>
+		<CharacterName { ...context }/>
 		<Power { ...context }/>
 	</div>;
 
