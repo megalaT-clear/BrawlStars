@@ -3,12 +3,12 @@ import BrawlersImage from './BrawlersImage';
 import Header from './Header/Index';
 import Body from './Body/Index';
 import Footer from './Footer/Index';
-import sorting from '../services/sorting';
+import sortingManager from '../services/sortingManager';
 
 const Characters = (context) =>
 	<div
 		className="square"
-		style={ sorting.getSquare(context) }
+		style={ sortingManager.getSquare(context) }
 	>
 		<BrawlersImage { ...context }/>
 		<Header { ...context }/>

@@ -1,6 +1,6 @@
 import React from 'react';
 
 const CharacterName = ({ data: { character }}) =>
-	<div className="namePower">{character.name}</div>;
+	<div className="characterName">{character.name}</div>;
 
 export default CharacterName;

@@ -2,14 +2,13 @@ import { React, useState } from 'react';
 import './App.scss';
 import Button from './components/Button';
 import Container from './components/Container';
-
-import sorting from './services/sorting';
+import sortingManager from './services/sortingManager';
 import BrawlersCount from './components/BrawlersCount';
 
 const getInitialState = ({ config: { characters }}) => ({
 	buttonIndex: 1,
 	sortModes: 'by Rarity',
-	characterDetails: sorting.getCharacters(characters),
+	characterDetails: sortingManager.getCharacters(characters),
 });
 
 const App = (context) => {
@@ -18,12 +17,9 @@ const App = (context) => {
 
 	return (
 		<div
+			className="App"
 			style={ {
 				backgroundImage: 'url(\'/img/backGround.jpeg\')',
-				backgroundRepeat: 'no-repeat',
-				height: '100vh',
-				width: '100vW',
-				backgroundSize: 'cover',
 			} }
 		>
 			<BrawlersCount { ...extendedContext }/>

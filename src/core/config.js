@@ -44,34 +44,6 @@ const config = {
 			trophies: 50,
 			image: '/img/colt.jpeg',
 		},
-		{
-			name: 'SHELLY',
-			type: 'StartingBrawler',
-			rank: 3,
-			trophies: 22,
-			image: '/img/shelly.jpeg',
-		},
-		{
-			name: 'TARA',
-			type: 'Mythic',
-			rank: 2,
-			trophies: 10,
-			image: '/img/tara.jpeg',
-		},
-		{
-			name: 'Bo',
-			type: 'Epic',
-			rank: 5,
-			trophies: 44,
-			image: '/img/Bo.jpeg',
-		},
-		{
-			name: 'BARLEY',
-			type: 'Rare',
-			rank: 6,
-			trophies: 80,
-			image: '/img/barley.jpeg',
-		},
 	],
 
 	items: [

@@ -1,4 +1,3 @@
-/* eslint-disable max-lines-per-function */
 import React from 'react';
 
 const Trophies = ({ data: { character }}) =>
@@ -8,11 +7,9 @@ const Trophies = ({ data: { character }}) =>
 			style={ { width: `${ character.trophies }px`,
 				color: 'gold' } }
 		>
-			<span className="trophiesImg">
+			<span className="trophiesImage">
 				<img
-					style={ {
-						borderRadius: '30%',
-					} }
+					style={ { borderRadius: '30%' } }
 					src="./img/trophies.jpeg"
 					alt="noImage"
 					width="24px"

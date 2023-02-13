@@ -11,8 +11,8 @@ const getSquare = (context) => {
 
 	return { top: (Math.floor(Key / 3) * 300) + 130,
 		left: ((((Key % 3) * squareMultiplier) + squareAdd) * size) + 200,
-		height: 105 * size,
-		width: 120 * size };
+		height: 233,
+		width: 238 };
 };
 
 const getCharacters = (characters) =>
@@ -49,7 +49,7 @@ const closestToNextRank = (characters, context) => {
 		(trophies[a.rank] - a.trophies) - (trophies[b.rank] - b.trophies));
 };
 
-const sorting = {
+const sortingManagerManager = {
 	byRarity,
 	byRarityDescending,
 	leastTrophies,
@@ -60,4 +60,4 @@ const sorting = {
 	getSquare,
 };
 
-export default sorting;
+export default sortingManagerManager;

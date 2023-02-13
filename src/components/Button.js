@@ -1,7 +1,7 @@
 /* eslint-disable max-lines-per-function */
 import { peek } from '@laufire/utils/debug';
 import React from 'react';
-import sorting from '../services/sorting';
+import sortingManager from '../services/sortingManager';
 
 const Button = (context) => {
 	const { state, setState } = context;
@@ -10,17 +10,17 @@ const Button = (context) => {
 
 	const types = {
 		'least Trophies': (characterDetail) =>
-			sorting.leastTrophies(characterDetail),
+			sortingManager.leastTrophies(characterDetail),
 		'most Trophies': (characterDetail) =>
-			sorting.mostTrophies(characterDetail),
+			sortingManager.mostTrophies(characterDetail),
 		'power Level': (characterDetail) =>
-			sorting.powerLevel(characterDetail),
+			sortingManager.powerLevel(characterDetail),
 		'by Rarity': (characterDetail) =>
-			sorting.byRarity(characterDetail, context),
+			sortingManager.byRarity(characterDetail, context),
 		'by Rarity Descending': (characterDetail) =>
-			sorting.byRarityDescending(characterDetail, context),
+			sortingManager.byRarityDescending(characterDetail, context),
 		'closest To Next Rank': (characterDetail) =>
-			sorting.closestToNextRank(characterDetail, context),
+			sortingManager.closestToNextRank(characterDetail, context),
 	};
 
 	return (

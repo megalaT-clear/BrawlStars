@@ -3,7 +3,7 @@ import React from 'react';
 const BrawlersImage = ({ data: { character }}) =>
 	<div>
 		<img
-			className="img"
+			className="characterImage"
 			src={ character.image }
 			alt="noImage"
 			width="100%"
