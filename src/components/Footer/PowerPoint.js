@@ -1,7 +1,7 @@
 import React from 'react';
 
-const PowerPoint = ({ data: { character }}) =>
-	<div className="powerPointStyle">
+const PowerPoint = ({ data: { brawlStar }}) =>
+	<div className="powerPoint">
 		<img
 			style={ {
 				borderRadius: '50%',
@@ -11,7 +11,7 @@ const PowerPoint = ({ data: { character }}) =>
 			width="30px"
 			height="30px"
 		/>
-		<label className="powerPointsNumber">{character.powerPoints}</label>
+		<label className="powerPointsNumber">{brawlStar.powerPoints}</label>
 	</div>;
 
 export default PowerPoint;

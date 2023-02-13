@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Trophies = ({ data: { character }}) =>
-	<div className="trophiesBar">
+const Trophies = ({ data: { brawlStar }}) =>
+	<div className="trophies">
 		<div
-			className="bar"
-			style={ { width: `${ character.trophies }px`,
+			className="trophiesBar"
+			style={ { width: `${ brawlStar.trophies }px`,
 				color: 'gold' } }
 		>
 			<span className="trophiesImage">
@@ -15,7 +15,7 @@ const Trophies = ({ data: { character }}) =>
 					width="24px"
 					height="20px"
 				/>
-				<label className="trophiesCount">{character.trophies}</label>
+				<label className="trophiesCount">{brawlStar.trophies}</label>
 			</span>
 		</div>
 	</div>;

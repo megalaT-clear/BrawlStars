@@ -1,5 +1,6 @@
 /* eslint-disable no-magic-numbers */
 const config = {
+	timeDelay: 1000,
 	size: 2,
 	characters: [
 		{

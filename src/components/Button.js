@@ -1,36 +1,35 @@
-/* eslint-disable max-lines-per-function */
 import { peek } from '@laufire/utils/debug';
 import React from 'react';
 import sortingManager from '../services/sortingManager';
 
+const types = {
+	'least Trophies': (context) =>
+		sortingManager.leastTrophies(context),
+	'most Trophies': (context) =>
+		sortingManager.mostTrophies(context),
+	'power Level': (context) =>
+		sortingManager.powerLevel(context),
+	'by Rarity': (context) =>
+		sortingManager.byRarity(context),
+	'by Rarity Descending': (context) =>
+		sortingManager.byRarityDescending(context),
+	'closest To Next Rank': (context) =>
+		sortingManager.closestToNextRank(context),
+};
+
 const Button = (context) => {
 	const { state, setState } = context;
-	const { buttonIndex, sortModes, characterDetails } = state;
+	const { buttonIndex, sortModes } = state;
 	const { config: { items }} = context;
-
-	const types = {
-		'least Trophies': (characterDetail) =>
-			sortingManager.leastTrophies(characterDetail),
-		'most Trophies': (characterDetail) =>
-			sortingManager.mostTrophies(characterDetail),
-		'power Level': (characterDetail) =>
-			sortingManager.powerLevel(characterDetail),
-		'by Rarity': (characterDetail) =>
-			sortingManager.byRarity(characterDetail, context),
-		'by Rarity Descending': (characterDetail) =>
-			sortingManager.byRarityDescending(characterDetail, context),
-		'closest To Next Rank': (characterDetail) =>
-			sortingManager.closestToNextRank(characterDetail, context),
-	};
 
 	return (
 		<button
-			className="buttonStyle"
+			className="button"
 			onClick={ () => setState({
 				...state,
 				buttonIndex: peek(buttonIndex) + 1,
 				sortModes: items[buttonIndex % items.length],
-				characterDetails: types[sortModes](characterDetails, context),
+				brawlStars: types[sortModes](context),
 			}) }
 		>{sortModes}
 		</button>);

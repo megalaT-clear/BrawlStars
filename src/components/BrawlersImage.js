@@ -1,10 +1,10 @@
 import React from 'react';
 
-const BrawlersImage = ({ data: { character }}) =>
+const BrawlersImage = ({ data: { brawlStar }}) =>
 	<div>
 		<img
-			className="characterImage"
-			src={ character.image }
+			className="brawlersImage"
+			src={ brawlStar.image }
 			alt="noImage"
 			width="100%"
 			height="100%"

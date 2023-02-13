@@ -8,20 +8,19 @@ import BrawlersCount from './components/BrawlersCount';
 const getInitialState = ({ config: { characters }}) => ({
 	buttonIndex: 1,
 	sortModes: 'by Rarity',
-	characterDetails: sortingManager.getCharacters(characters),
+	brawlStars: sortingManager.getCharacters(characters),
+	powerUpgrade: false,
 });
 
 const App = (context) => {
 	const [state, setState] = useState(getInitialState(context));
 	const extendedContext = { ...context, state, setState };
+	const { once } = context;
+
+	once(() => sortingManager.getPower(extendedContext));
 
 	return (
-		<div
-			className="App"
-			style={ {
-				backgroundImage: 'url(\'/img/backGround.jpeg\')',
-			} }
-		>
+		<div className="App">
 			<BrawlersCount { ...extendedContext }/>
 			<Button { ...extendedContext }/>
 			<Container { ...extendedContext }/>

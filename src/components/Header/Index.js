@@ -1,5 +1,5 @@
 import React from 'react';
-import Rank from './Level';
+import Rank from './Rank';
 import Trophies from './Trophies';
 
 const Header = (context) =>

@@ -1,18 +1,18 @@
 import React from 'react';
 
 const Rank = (context) => {
-	const { data: { character }} = context;
+	const { data: { brawlStar }} = context;
 
 	return (
 		<div>
 			<img
-				style={ { borderRadius: '50%' } }
+				style={ { borderRadius: '70%' } }
 				src="./img/hexagon.jpeg"
 				alt="noImage"
 				width="43px"
 				height="40px"
 			/>
-			<label className="level">{character.rank}</label>
+			<label className="rank">{brawlStar.rank}</label>
 		</div>
 	);
 };

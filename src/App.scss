@@ -1,25 +1,27 @@
 .App{
 	background-repeat: no-repeat;
+	background-image: url('https://i.redd.it/rmmz9vnwvd031.jpg');
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	background-size: cover;
 }
 
-.titleStyle{
+.brawlersCount{
 	position: absolute;
-	top: 0%;
+	top: 2%;
 	left: 42%;
 	color:beige;
   font-size: 30px ;
 	font-weight: bold;
 }
 
-.buttonStyle{
+.button{
 	position: absolute;
+	top: 2%;
 	height:4%;
 	left: 57%;
-	width:10%;
+	width:auto;
 	background-color: rgb(24, 23, 23);
 	color:beige;
 	font-size: large;
@@ -32,7 +34,7 @@
 	background-color: #3fc943;
 }
 
-.characterImage{
+.brawlersImage{
 	position: absolute;
 	height: 81%;
 	width: 100%;
@@ -50,7 +52,7 @@
 	top: 30px;
 }
 
-.trophiesBar{
+.trophies{
 	position: absolute;
 	height: 53%;
 	top: 12%;
@@ -60,7 +62,7 @@
 	background-color: rgb(41, 39, 39);
 	}
 
-.bar{
+.trophiesBar{
 	position: absolute;
 	height: 100%;
 	background-color: rgb(226, 60, 9);
@@ -81,7 +83,7 @@
 	color: gold;
 }
 
-.bodyStyle{
+.body{
 	position: absolute;
 	bottom: 18%;
 	width:100%;
@@ -124,7 +126,7 @@
 	border: 2px solid white;
 }
 
-.rank{
+.powerLevel{
 	position: absolute;
 	left: 29%;
 	top: 5%;
@@ -133,22 +135,22 @@
 	font-weight: bold;
 }
 
-.footerStyle{
+.footer{
 	position: absolute;
 	height: 19%;
 	bottom: 0%;
 	width:100%;
-	background-color: rgb(41 39 39)
+	background-color: rgb(69, 216, 69)
 }
 
-.coinStyle{
+.brawlCoin{
 	position: absolute;
 	top: 12%;
 	right: 27%;
 	border-radius: 50%;
 }
 
-.coinsNumber{
+.brawlCoinNumber{
 	position: absolute;
 	right: -170%;
 	font-size: 150%;
@@ -156,7 +158,7 @@
 	color:beige
 }
 
-.powerPointStyle{
+.powerPoint{
 	position: absolute;
 	top: 12%;
 	left: 9%;
@@ -171,7 +173,7 @@
 	color: red
 }
 
-.level{
+.rank{
 	position: absolute;
 	top: 19%;
 	left: 6%;
@@ -181,13 +183,23 @@
 
 .plusSymbol{
 	position: absolute;
-	top: -3%;
-	left: 49%;
+	top: -1%;
+	left: 46%;
 	font-size: 195%;
 	color:rgb(33, 34, 48)
 }
 
+.upgradeUp{
+	position: absolute;
+	top: 10%;
+	left: 40%;
+}
 
+.upgradeDown{
+	position: absolute;
+	top: 0%;
+	left: 40%;
+}
 
 
 

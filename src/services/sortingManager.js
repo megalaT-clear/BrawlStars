@@ -15,37 +15,46 @@ const getSquare = (context) => {
 		width: 238 };
 };
 
+const getPower = (context) => {
+	const { setState, config: { timeDelay }} = context;
+
+	return setInterval(() => setState((prevState) => ({
+		...prevState,
+		powerUpgrade: !prevState.powerUpgrade,
+	})), timeDelay);
+};
+
 const getCharacters = (characters) =>
 	characters.map((character) => ({ ...character,
 		powerLevel: rndBetween(1, 10),
 		powerPoints: rndBetween(1, 500),
 		coins: rndBetween(1, 500) }));
 
-const leastTrophies = (characters) =>
-	characters.sort((a, b) => a.trophies - b.trophies);
+const leastTrophies = ({ state: { brawlStars }}) =>
+	brawlStars.sort((a, b) => a.trophies - b.trophies);
 
-const mostTrophies = (characters) =>
-	characters.sort((a, b) => b.trophies - a.trophies);
+const mostTrophies = ({ state: { brawlStars }}) =>
+	brawlStars.sort((a, b) => b.trophies - a.trophies);
 
-const powerLevel = (characters) =>
-	characters.sort((a, b) => b.powerLevel - a.powerLevel);
+const powerLevel = ({ state: { brawlStars }}) =>
+	brawlStars.sort((a, b) => b.powerLevel - a.powerLevel);
 
-const byRarityDescending = (characters, context) => {
-	const { config: { Rarity }} = context;
+const byRarityDescending = (context) => {
+	const { config: { Rarity }, state: { brawlStars }} = context;
 
-	return characters.sort((a, b) => Rarity[a.type] - Rarity[b.type]);
+	return brawlStars.sort((a, b) => Rarity[a.type] - Rarity[b.type]);
 };
 
-const byRarity = (characters, context) => {
-	const { config: { Rarity }} = context;
+const byRarity = (context) => {
+	const { config: { Rarity }, state: { brawlStars }} = context;
 
-	return characters.sort((a, b) => Rarity[b.type] - Rarity[a.type]);
+	return brawlStars.sort((a, b) => Rarity[b.type] - Rarity[a.type]);
 };
 
-const closestToNextRank = (characters, context) => {
-	const { config: { trophies }} = context;
+const closestToNextRank = (context) => {
+	const { config: { trophies }, state: { brawlStars }} = context;
 
-	return characters.sort((a, b) =>
+	return brawlStars.sort((a, b) =>
 		(trophies[a.rank] - a.trophies) - (trophies[b.rank] - b.trophies));
 };
 
@@ -58,6 +67,7 @@ const sortingManagerManager = {
 	closestToNextRank,
 	getCharacters,
 	getSquare,
+	getPower,
 };
 
 export default sortingManagerManager;

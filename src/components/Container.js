@@ -2,11 +2,11 @@ import React from 'react';
 import Characters from './Characters';
 
 const Container = (context) => {
-	const { state: { characterDetails }} = context;
+	const { state: { brawlStars }} = context;
 
-	return characterDetails.map((character, Key) =>
+	return brawlStars.map((brawlStar, Key) =>
 		<div key={ Key }>
-			<Characters { ...{ ...context, data: { character, Key }} }/>
+			<Characters { ...{ ...context, data: { brawlStar, Key }} }/>
 		</div>);
 };
 

@@ -3,7 +3,7 @@ import BrawlCoin from './BrawlCoin';
 import PowerPoint from './PowerPoint';
 
 const Footer = (context) =>
-	<div className="footerStyle">
+	<div className="footer">
 		<BrawlCoin { ...context }/>
 		<PowerPoint { ...context }/>
 		<label className="plusSymbol">+</label>

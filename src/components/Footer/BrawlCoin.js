@@ -1,7 +1,7 @@
 import React from 'react';
 
-const BrawlCoin = ({ data: { character }}) =>
-	<div className="coinStyle">
+const BrawlCoin = ({ data: { brawlStar }}) =>
+	<div className="brawlCoin">
 		<img
 			style={ {
 				borderRadius: '50%',
@@ -11,7 +11,7 @@ const BrawlCoin = ({ data: { character }}) =>
 			width="30px"
 			height="30px"
 		/>
-		<label className="coinsNumber">{character.coins}</label>
+		<label className="brawlCoinNumber">{brawlStar.coins}</label>
 	</div>;
 
 export default BrawlCoin;
