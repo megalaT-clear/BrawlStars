@@ -3,7 +3,7 @@ import BrawlersCount from '../BrawlersCount';
 import Button from './Button';
 
 const ScreenHeader = (context) =>
-	<div>
+	<div className="screenHeader">
 		<BrawlersCount { ...context }/>
 		<Button { ...context }/>;
 	</div>;
