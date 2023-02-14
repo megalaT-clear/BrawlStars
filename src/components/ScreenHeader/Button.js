@@ -1,6 +1,6 @@
 import { peek } from '@laufire/utils/debug';
 import React from 'react';
-import sortingManager from '../services/sortingManager';
+import sortingManager from '../../services/sortingManager';
 
 const types = {
 	'least Trophies': (context) =>

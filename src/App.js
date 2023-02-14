@@ -1,9 +1,8 @@
 import { React, useState } from 'react';
 import './App.scss';
-import Button from './components/Button';
-import Container from './components/Container';
 import sortingManager from './services/sortingManager';
-import BrawlersCount from './components/BrawlersCount';
+import ScreenHeader from './components/ScreenHeader/Index';
+import ScreenBody from './components/ScreenBody/Index';
 
 const getInitialState = ({ config: { characters }}) => ({
 	buttonIndex: 1,
@@ -21,9 +20,8 @@ const App = (context) => {
 
 	return (
 		<div className="App">
-			<BrawlersCount { ...extendedContext }/>
-			<Button { ...extendedContext }/>
-			<Container { ...extendedContext }/>
+			<ScreenHeader { ...extendedContext }/>
+			<ScreenBody { ...extendedContext }/>
 		</div>);
 };
 

@@ -2,10 +2,30 @@
 	background-repeat: no-repeat;
 	background-image: url('https://i.redd.it/rmmz9vnwvd031.jpg');
 	position: absolute;
-	height: 100%;
+	display: flex;
 	width: 100%;
 	background-size: cover;
+	justify-content: center;
 }
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 1000px;
+	margin-top: 10%;
+	padding-bottom: 25px;
+	border: 9px solid rgb(125, 230, 27);
+}
+
+.square{
+	position: relative;
+	height: 200px;
+	width: 200px;
+	border: 2px solid black;
+	margin-top: 50px;
+	margin-left:10%;
+}
+
 
 .brawlersCount{
 	position: absolute;
@@ -28,11 +48,7 @@
 	font-weight: bold;
 }
 
-.square{
-	position: absolute;
-	border: 3px solid;
-	background-color: #3fc943;
-}
+
 
 .brawlersImage{
 	position: absolute;
