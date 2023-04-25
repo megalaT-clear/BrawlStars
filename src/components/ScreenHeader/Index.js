@@ -5,7 +5,7 @@ import Button from './Button';
 const ScreenHeader = (context) =>
 	<div className="screenHeader">
 		<BrawlersCount { ...context }/>
-		<Button { ...context }/>;
+		<Button { ...context }/>
 	</div>;
 
 export default ScreenHeader;
